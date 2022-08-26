@@ -24,6 +24,7 @@ export default {
     // Fetch the posts for the current page
     const posts = await $content()
       .only(["slug", "title"])
+      .sortBy("date", "desc")
       .limit(POSTS_PER_PAGE)
       .skip(offset)
       .fetch();
