@@ -20,5 +20,17 @@
 
       return { post };
     },
+    head() {
+      return {
+        title: `${this.post.title} | My Blog`,
+        meta: [
+          {
+            hid: "description",
+            name: "description",
+            content: this.post.description,
+          },
+        ],
+      };
+    },
   };
 </script>
