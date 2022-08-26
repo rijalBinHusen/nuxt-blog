@@ -11,7 +11,7 @@
 
 ### Diplaying blog content
 
-![blog content](@/../static/bloglist.png)
+![blog content](@/../static/blogcontent.png)
 
 ## Build Setup
 
