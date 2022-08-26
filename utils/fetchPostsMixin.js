@@ -20,10 +20,11 @@ export default {
     // We want to skip the right amount of posts
     // so we only grab the posts for the current page.
     const offset = POSTS_PER_PAGE * (currentPage - 1);
-
+    const today = new Date().valueOf();
     // Fetch the posts for the current page
     const posts = await $content()
       .only(["slug", "title"])
+      .where({ date: { $lte: today } })
       .sortBy("date", "desc")
       .limit(POSTS_PER_PAGE)
       .skip(offset)
