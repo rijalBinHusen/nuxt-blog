@@ -1,5 +1,18 @@
 # nuxt-blog
 
+## Source tutorial 
+[Tutuorial](https://koenwoortman.com/nuxtjs-create-blog-with-content-module/)
+
+## The project would look like
+
+### List of blog post
+
+![list of blogs](@/../static/bloglist.png)
+
+### Diplaying blog content
+
+![blog content](@/../static/bloglist.png)
+
 ## Build Setup
 
 ```bash
